@@ -1,6 +1,6 @@
 <body>
     <?php
-        require_once('include/bar_nav.php');
+        require_once('templates/bar_nav.php');
         // require_once('model/model.php');
         require_once('templates/layout.php');
     ?>
@@ -9,10 +9,10 @@
             	$page = strval($_GET['page']);
 
                 if($page == 1) {
-                    include_once('include/contact.php');
+                    include_once('templates/contact.php');
                 }
                 elseif($page == 2) {
-                    include_once('include/vos_avis.php');
+                    include_once('templates/vos_avis.php');
                 }
                 else {
                     include_once('index.php');
@@ -23,6 +23,6 @@
         }
     ?>
     <?php
-        require_once('include/footer.php');
+        require_once('templates/footer.php');
     ?>
 </body>

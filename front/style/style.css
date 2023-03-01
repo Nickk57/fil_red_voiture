@@ -4,11 +4,77 @@ body {
   background: black;
 }
 
+nav {
+  background: black;
+  color: white;
+}
+
 .ligne1 {
   border-top: 1px solid black;
   height: 100px;
 }
 
 .img1 {
-  width: 50px;
+  width: 20px;
+}
+
+a {
+  text-decoration: none;
+  text-transform: none;
+  color: white;
+}
+
+svg {
+  color: white;
+}
+
+ul {
+  color: white;
+  list-style: none;
+}
+
+label {
+  color: white;
+}
+
+.RatingsInputcomponent_icons {
+  cursor: pointer;
+  display: flex;
+  margin-bottom: var(--iconsMarginBottom, 0);
+  margin-left: var(--iconsMarginLeft, 0);
+  margin-right: var(--iconsMarginRight, 0);
+  margin-top: var(--iconsMarginTop, 0);
+  min-width: var(--iconsMinWidth, auto);
+  order: var(--iconsOrder, 2);
+}
+.RatingsInputcomponent_icons label {
+  padding-left: var(--iconsPaddingLeft, 0);
+  padding-right: var(--iconsPaddingRight, 0);
+}
+
+.RatingsInputcomponent_root {
+  display: inline-block;
+}
+
+.RatingsInputcomponent_hiddenInput {
+  border: 0;
+  height: 1px;
+  margin: -1px;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+input[type=radio i] {
+  background-color: initial;
+  cursor: default;
+  -webkit-appearance: auto;
+     -moz-appearance: auto;
+          appearance: auto;
+  box-sizing: border-box;
+  margin: 3px 3px 0px 5px;
+  padding: initial;
+  border: initial;
 }/*# sourceMappingURL=style.css.map */
