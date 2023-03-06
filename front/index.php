@@ -14,6 +14,12 @@
                 elseif($page == 2) {
                     include_once('templates/vos_avis.php');
                 }
+                elseif($page == 3) {
+                    include_once('templates/a_vendre.php');
+                }
+                elseif($page == 4) {
+                    include_once('templates/vendu.php');
+                }
                 else {
                     include_once('index.php');
                 }

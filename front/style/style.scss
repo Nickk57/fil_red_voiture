@@ -67,3 +67,42 @@ input[type="radio" i] {
     padding: initial;
     border: initial;
 }
+.opacity1 {
+    & input {
+        opacity: 10%;
+    }
+}
+input {
+    opacity: 10%;
+}
+.container_checkbox {
+    font-size: 24px;
+    cursor: pointer;
+    caret-color: transparent;
+    display: block;
+    
+    & input {
+        display: none;
+    }
+    &:checked ~ .img-checked {
+        display: inline;
+    }
+    &:checked ~ .img-uncheked {
+        display: none;
+    }
+    &:hover input:not(:checked) ~ .img-hover {
+        display: inline;
+    }
+    &:hover input:not(:checked) ~ .img-checked {
+        display: none;
+    }
+    &:hover input:not(:checked) ~ .img-uncheked {
+        display: none;
+    }
+}
+.img-checked {
+    display: none;
+}
+.img-hover {
+    display: none;
+}

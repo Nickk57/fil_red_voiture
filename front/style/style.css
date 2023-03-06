@@ -77,4 +77,45 @@ input[type=radio i] {
   margin: 3px 3px 0px 5px;
   padding: initial;
   border: initial;
+}
+
+.opacity1 input {
+  opacity: 10%;
+}
+
+input {
+  opacity: 10%;
+}
+
+.container_checkbox {
+  font-size: 24px;
+  cursor: pointer;
+  caret-color: transparent;
+  display: block;
+}
+.container_checkbox input {
+  display: none;
+}
+.container_checkbox:checked ~ .img-checked {
+  display: inline;
+}
+.container_checkbox:checked ~ .img-uncheked {
+  display: none;
+}
+.container_checkbox:hover input:not(:checked) ~ .img-hover {
+  display: inline;
+}
+.container_checkbox:hover input:not(:checked) ~ .img-checked {
+  display: none;
+}
+.container_checkbox:hover input:not(:checked) ~ .img-uncheked {
+  display: none;
+}
+
+.img-checked {
+  display: none;
+}
+
+.img-hover {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

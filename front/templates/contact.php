@@ -2,7 +2,8 @@
     <!-- <div class="col"> -->
         <div class="col-12">
             <div class="row">
-                <ul class="col-4">
+                <div class="col-2"></div>
+                <ul class="col-4 text-center">
                     <li><h2>Garage Nicolas</h2></li>
                     <li>adresse</li>
                     <li>code postall</li>
@@ -41,14 +42,13 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div><br>
         <div class="row">
+            <div class="col-2"></div>
             <div class="col">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d457.9655876286472!2d5.
-                736069621746096!3d49.510105536755916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1
-                s0x47eac6363a5998cb%3A0x40a5fb99a3afac0!2sLexy!5e0!3m2!1sfr!2sfr!4v1677683768363!5m2!1sfr!2sfr" 
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d748.2779078350425!2d5.736834589091838!3d49.51004983799478!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47eac7cb70fe755f%3A0xd56b7e01e52ae2b1!2sGarage%20St%20Maurice!5e0!3m2!1sfr!2sfr!4v1678088471880!5m2!1sfr!2sfr" 
+                width="1200" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-        </div>
+        </div><br>
     </div>
 </div>

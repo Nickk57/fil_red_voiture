@@ -15,10 +15,10 @@
                 <a class="nav-link" href="#">atelier</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">à vendre</a>
+                <a class="nav-link" href="index.php?page=3">à vendre</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">vendu</a>
+                <a class="nav-link" href="index.php?page=4">vendu</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">l'équipe</a>
