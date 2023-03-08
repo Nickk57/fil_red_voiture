@@ -87,35 +87,89 @@ input {
   opacity: 10%;
 }
 
-.container_checkbox {
-  font-size: 24px;
+textarea {
+  opacity: 10%;
+}
+
+input::-moz-placeholder {
+  color: white;
+  opacity: 1;
+}
+
+input::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+textarea::-moz-placeholder {
+  color: white;
+  opacity: 1;
+}
+
+textarea::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+::-webkit-input-placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.black {
+  background-color: transparent;
+  border: 0.5px solid grey;
+  padding: 5px;
+}
+.black img {
+  margin: 5px 5px 5px 5px;
+}
+
+.text1 {
+  text-transform: uppercase;
+}
+
+.carousel {
+  position: relative;
+}
+.carousel-item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.carousel-control-prev, .carousel-control-next {
+  width: 50px;
+}
+
+#carousel-thumbs {
+  background: rgba(255, 255, 255, 0.3);
+  bottom: 0;
+  left: 0;
+  padding: 0 50px;
+  right: 0;
+}
+#carousel-thumbs img {
+  border: 5px solid transparent;
   cursor: pointer;
-  caret-color: transparent;
-  display: block;
 }
-.container_checkbox input {
-  display: none;
+#carousel-thumbs img:hover {
+  border-color: rgba(255, 255, 255, 0.3);
 }
-.container_checkbox:checked ~ .img-checked {
-  display: inline;
-}
-.container_checkbox:checked ~ .img-uncheked {
-  display: none;
-}
-.container_checkbox:hover input:not(:checked) ~ .img-hover {
-  display: inline;
-}
-.container_checkbox:hover input:not(:checked) ~ .img-checked {
-  display: none;
-}
-.container_checkbox:hover input:not(:checked) ~ .img-uncheked {
-  display: none;
+#carousel-thumbs .selected img {
+  border-color: #fff;
 }
 
-.img-checked {
-  display: none;
+@media all and (max-width: 767px) {
+  .carousel-container #carousel-thumbs img {
+    border-width: 3px;
+  }
 }
-
-.img-hover {
-  display: none;
+@media all and (min-width: 576px) {
+  .carousel-container #carousel-thumbs {
+    position: absolute;
+  }
+}
+@media all and (max-width: 576px) {
+  .carousel-container #carousel-thumbs {
+    background: #ccccce;
+  }
 }/*# sourceMappingURL=style.css.map */

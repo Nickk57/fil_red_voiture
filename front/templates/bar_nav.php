@@ -12,7 +12,7 @@
                 <a class="nav-link" href="#">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">atelier</a>
+                <a class="nav-link" href="index.php?page=5">atelier</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="index.php?page=3">à vendre</a>

@@ -20,6 +20,12 @@
                 elseif($page == 4) {
                     include_once('templates/vendu.php');
                 }
+                elseif($page == 5) {
+                    include_once('templates/atelier.php');
+                }
+                elseif($page == 6) {
+                    include_once('templates/notre_atelier.php');
+                }
                 else {
                     include_once('index.php');
                 }

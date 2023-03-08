@@ -75,34 +75,77 @@ input[type="radio" i] {
 input {
     opacity: 10%;
 }
-.container_checkbox {
-    font-size: 24px;
-    cursor: pointer;
-    caret-color: transparent;
-    display: block;
-    
-    & input {
-        display: none;
-    }
-    &:checked ~ .img-checked {
-        display: inline;
-    }
-    &:checked ~ .img-uncheked {
-        display: none;
-    }
-    &:hover input:not(:checked) ~ .img-hover {
-        display: inline;
-    }
-    &:hover input:not(:checked) ~ .img-checked {
-        display: none;
-    }
-    &:hover input:not(:checked) ~ .img-uncheked {
-        display: none;
+textarea {
+    opacity: 10%;
+}
+input::placeholder {
+    color: white;
+    opacity: 1;
+}
+textarea::placeholder {
+    color: white;
+    opacity: 1;
+}
+::-webkit-input-placeholder {
+    color: white;
+    opacity: 1;
+}
+.black {
+    background-color: transparent;
+    border: .5px solid grey;
+    padding: 5px;
+    & img {
+        margin: 5px 5px 5px 5px;
     }
 }
-.img-checked {
-    display: none;
+.text1 {
+    text-transform: uppercase;
 }
-.img-hover {
-    display: none;
+// carousel
+
+.carousel {
+    position: relative;
+
+    &-item img {
+        object-fit: cover;
+    }
+    &-control-prev, &-control-next {
+        width: 50px;
+    }
+}
+#carousel {
+    &-thumbs {
+        background: rgba(255,255,255,.3);
+        bottom: 0;
+        left: 0;
+        padding: 0 50px;
+        right: 0;
+
+        & img {
+            border: 5px solid transparent;
+            cursor: pointer;
+
+            &:hover {
+                border-color: rgba(255,255,255,.3);
+            }
+        }
+        & .selected img {
+            border-color: #fff;
+        }
+    }
+}
+@media all and (max-width: 767px) {
+    .carousel-container #carousel-thumbs img {
+        border-width: 3px;
+    }
+}
+@media all and (min-width: 576px) {
+    .carousel-container #carousel-thumbs {
+        position: absolute;
+    }
+}
+@media all and (max-width: 576px) {
+    .carousel-container #carousel-thumbs {
+        background: #ccccce;
+    }
 }
