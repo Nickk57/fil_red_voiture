@@ -1,0 +1,170 @@
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    background-image: url(../image/back-ardoise.webp);
+    background-size: 100% 100%;
+}
+nav {
+    background: black;
+    color: white;
+}
+.ligne1 {
+    border-top: 1px solid black;
+    height: 100px;
+}
+.img1 {
+    width: 20px;
+}
+.img2 {
+    width: 40rem;
+}
+a {
+    text-decoration: none;
+    text-transform: none;
+    color: white;
+}
+svg {
+    color: white;
+}
+ul {
+    color: white;
+    list-style: none;
+}
+label {
+    color: white;
+}
+.RatingsInputcomponent_icons {
+    cursor: pointer;
+    display: flex;
+    margin-bottom: var(--iconsMarginBottom,0);
+    margin-left: var(--iconsMarginLeft,0);
+    margin-right: var(--iconsMarginRight,0);
+    margin-top: var(--iconsMarginTop,0);
+    min-width: var(--iconsMinWidth,auto);
+    order: var(--iconsOrder,2);
+    & label {
+        padding-left: var(--iconsPaddingLeft,0);
+        padding-right: var(--iconsPaddingRight,0);
+    }
+}
+.RatingsInputcomponent_root {
+    display: inline-block;
+}
+.RatingsInputcomponent_hiddenInput {
+    border: 0;
+    height: 1px;
+    margin: -1px;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+input[type="radio" i] {
+    background-color: initial;
+    cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    margin: 3px 3px 0px 5px;
+    padding: initial;
+    border: initial;
+}
+.opacity1 {
+    & input {
+        opacity: 10%;
+    }
+}
+.form-control::placeholder {
+    color: red;
+    font-weight: bold;
+    opacity: 0.5;
+}
+.rating {
+    direction: rtl;
+}
+.rating a {
+    float: right;
+    color: #aaa;
+    font-size: 3em;
+    text-decoration: none;
+    -webkit-transition: color .4s;
+    -moz-transition: color .4s;
+    -o-transition: color .4s;
+    transition: color .4s;
+}
+.rating a:hover,
+.rating a:focus,
+.rating a:hover ~ a,
+.rating a:focus ~ a  {
+    color: orange;
+    cursor: pointer;
+}
+input {
+    opacity: 40%;
+}
+textarea {
+    opacity: 40%;
+}
+.black {
+    background-color: transparent;
+    border: .5px solid grey;
+    padding: 5px;
+    & img {
+        margin: 5px 5px 5px 5px;
+    }
+}
+.text1 {
+    text-transform: uppercase;
+}
+// carousel
+
+.carousel {
+    position: relative;
+
+    &-item img {
+        object-fit: cover;
+    }
+    &-control-prev, &-control-next {
+        width: 50px;
+        background: transparent;
+    }
+}
+#carousel {
+    &-thumbs {
+        background: rgba(255,255,255,.3);
+        bottom: 0;
+        left: 0;
+        padding: 0 50px;
+        right: 0;
+        background: transparent;
+
+        & img {
+            border: 5px solid transparent;
+            cursor: pointer;
+
+            &:hover {
+                border-color: rgba(255,255,255,.3);
+            }
+        }
+        & .selected img {
+            border-color: #fff;
+        }
+    }
+}
+@media all and (max-width: 767px) {
+    .carousel-container #carousel-thumbs img {
+        border-width: 3px;
+    }
+}
+@media all and (min-width: 576px) {
+    .carousel-container #carousel-thumbs {
+        position: absolute;
+    }
+}
+@media all and (max-width: 576px) {
+    .carousel-container #carousel-thumbs {
+        background: #ccccce;
+    }
+}
