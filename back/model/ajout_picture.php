@@ -10,8 +10,7 @@
 
     function ajoutPicture() {
         if (!isset($_POST['name']) || empty($_POST['name'])
-        || !isset($_FILES['picture']) || empty($_FILES['picture'])
-        || !isset($_POST['id_product']) || empty($_POST['id_product'])) {
+        || !isset($_FILES['picture']) || empty($_FILES['picture'])) {
             $success = "Il faut un nom et une image pour validé !";
         }
         else {        

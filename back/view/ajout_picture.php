@@ -11,6 +11,7 @@
         </div><br>
         <div class="form">
             <select class="col-3 text1" name="id_product" id="id_product">
+                <option value="null"> </option>
                 <?php foreach($selProduct as $product){?>
                     <option value="<?=$product['id']?>"><?= $product['name']?></option>
                 <?php } ?>

@@ -29,12 +29,18 @@
                     include_once('controller/product.php');
                     get_products();
                 }
+                elseif($page == 8) {
+                    include_once('controller/accueil.php');
+                }
+                elseif($page == 9) {
+                    include_once('controller/equipe.php');
+                }
                 else {
-                    include_once('index.php');
+                    include_once('controller/accueil.php');
                 }
         }
         else {
-            include_once('index.php');
+            include_once('controller/accueil.php');
         }
         require_once('view/footer.php');
     ?>

@@ -9,7 +9,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="index.php?page=8">Home</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="index.php?page=5">atelier</a>
@@ -21,7 +21,7 @@
                 <a class="nav-link" href="index.php?page=4">vendu</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">l'équipe</a>
+                <a class="nav-link" href="index.php?page=9">l'équipe</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="index.php?page=2">vos avis</a>
