@@ -18,28 +18,28 @@
         }
         else {    
             
-            $name = htmlspecialchars($_POST['name']);
-            $prix = htmlspecialchars($_POST['price']);
-            $cons = htmlspecialchars($_POST['constructeur']);
-            $modele = htmlspecialchars($_POST['modele']);
-            $version = htmlspecialchars($_POST['version']);
-            $annee = htmlspecialchars($_POST['annee']);
-            $dateimma = htmlspecialchars($_POST['dateimma']);
-            $kilom = htmlspecialchars($_POST['kilometrage']);
-            $carub = htmlspecialchars($_POST['carburant']);
-            $bdv = htmlspecialchars($_POST['bdv']);
-            $colorE = htmlspecialchars($_POST['colorE']);
-            $colorI = htmlspecialchars($_POST['colorI']);
-            $puisFisc = htmlspecialchars($_POST['puisFisc']);
-            $puisDIN = htmlspecialchars($_POST['puisDIN']);
-            $emisCO2 = htmlspecialchars($_POST['emissionCO2']);
-            $Nporte = htmlspecialchars($_POST['NPorte']);
-            $Nplace = htmlspecialchars($_POST['NPlace']);
-            $garantie = htmlspecialchars($_POST['garantie']);
-            $optionInter = htmlspecialchars($_POST['optionInter']);
-            $optionExter = htmlspecialchars($_POST['optionExter']);
-            $securite = htmlspecialchars($_POST['securite']);
-            $subcateg = htmlspecialchars($_POST['id_subcategory']);
+            $name = strip_tags($_POST['name']);
+            $prix = strip_tags($_POST['price']);
+            $cons = strip_tags($_POST['constructeur']);
+            $modele = strip_tags($_POST['modele']);
+            $version = strip_tags($_POST['version']);
+            $annee = strip_tags($_POST['annee']);
+            $dateimma = strip_tags($_POST['dateimma']);
+            $kilom = strip_tags($_POST['kilometrage']);
+            $carub = strip_tags($_POST['carburant']);
+            $bdv = strip_tags($_POST['bdv']);
+            $colorE = strip_tags($_POST['colorE']);
+            $colorI = strip_tags($_POST['colorI']);
+            $puisFisc = strip_tags($_POST['puisFisc']);
+            $puisDIN = strip_tags($_POST['puisDIN']);
+            $emisCO2 = strip_tags($_POST['emissionCO2']);
+            $Nporte = strip_tags($_POST['NPorte']);
+            $Nplace = strip_tags($_POST['NPlace']);
+            $garantie = strip_tags($_POST['garantie']);
+            $optionInter = strip_tags($_POST['optionInter']);
+            $optionExter = strip_tags($_POST['optionExter']);
+            $securite = strip_tags($_POST['securite']);
+            $subcateg = strip_tags($_POST['id_subcategory']);
 
             if (isset($_FILES['picture']) && $_FILES['picture']['error'] == 0) {
                 if ($_FILES['picture']['size'] <= 1000000) {
